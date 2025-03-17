@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title for the Recipe Page-->
     <title>Tiramisu Recipe</title>
-    <!-- Style that will be applied in the webpage -->
+     <!--Internal CSS for the recipe page-->
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #c2a17d; /* Light brown color resembling coffee dipped biscuits*/
+            background-color: #c2a17d;
             color: #333;
             max-width: 900px;
             margin: auto;
@@ -44,21 +45,55 @@
             font-size: 18px;
             font-weight: bold;
         }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #7b3f00;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #7b3f00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        footer p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
     </style>
 </head>
+ <!--Body tag that contains information-->
 <body>
-    <!-- Tiramisu desert recipe -->
-    <h1>Tiramisu Recipe ;-)</h1>
+ <!--Heading for the Recipe Page-->
+    <h1>Classic Ambreen's Tiramisu Recipe</h1>
+    <hr>
+ <!--Navigation to direct to the following sections-->    
+    <nav>
+        <a href="#Ingredients">Ingredients</a>|<a href="#instructions">Instructions</a>
+    </nav>
+ <!--Image of a Tiramisu-->
+    <img src="tiramisu-cake-with-cocoa-coffee-black-background.jpg" alt="Tiramisu Image">
     
-    <!-- Recipe Image -->
-    <img src="Tiramisu image.jpg" alt="Delicious homemade Tiramisu">
-    
-    <!-- Recipe Description -->
     <p>A classic Italian dessert made with layers of coffee-soaked ladyfingers, rich mascarpone cream, and a dusting of cocoa powder. Perfect for any occasion!</p>
-    
-    <!-- Ingredients Section -->
-     <!-- Using a unordered list for the ingrideients list -->
-    <h2>🤎Ingredients required:🤎</h2>
+ <!--Ingredients List-->  
+    <h2 id="Ingredients">🤎Ingredients required:🤎</h2>
     <ul>
         <li>1 cup strong brewed coffee, cooled</li>
         <li>3 tablespoons sugar</li>
@@ -70,10 +105,10 @@
         <li>1 tablespoon coffee liqueur (optional, for extra flavor)</li>
         <li>Dark chocolate shavings for garnish (optional)</li>
     </ul>
-    
-    <!-- Instructions for preparing desert -->
-     <!-- Using a ordered list for numbering the instructions. -->
-    <h2>🤎Instructions to be followed:🤎</h2>
+ <!--Ingredients list image-->
+    <img src="ClassicItalianTiramisu_Ingredient.jpg" alt="Ingredients Image">
+ <!--Instructions for the recipe-->
+    <h2 id="instructions">🤎Instructions to be followed:🤎</h2>
     <ol>
         <li>Whisk the egg yolks with sugar until pale and creamy.</li>
         <li>Add mascarpone cheese and vanilla extract, mixing until smooth.</li>
@@ -87,5 +122,21 @@
         <li>Chill in the refrigerator for at least 4 hours before serving.</li>
         <li>Garnish with dark chocolate shavings before serving (optional).</li>
     </ol>
+ <!--Additional tips-->
+    <h2>🍴 Pro Tips:</h2>
+    <ul>
+        <li>For a richer flavor, let the tiramisu rest overnight.</li>
+        <li>Use fresh, high-quality mascarpone cheese.</li>
+    </ul>
+ <!--Footer containing the socials-->
+    <footer>
+        <p>&copy; 2025 Blog by Ambreen. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
 </body>
 </html>
