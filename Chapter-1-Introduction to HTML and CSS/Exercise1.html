@@ -7,6 +7,7 @@
     <title>Tiramisu Recipe</title>
      <!--Internal CSS for the recipe page-->
     <style>
+        /* Styling the Body  */
         body {
             font-family: Arial, sans-serif;
             background-color: #c2a17d;
@@ -15,10 +16,12 @@
             margin: auto;
             padding: 30px;
         }
+        /* Headings Styling */
         h1, h2 {
             color: #7b3f00;
             text-align: center;
         }
+        /* Styling for both ordered and unordered lists */
         ul, ol {
             background: rgba(255, 255, 255, 0.9);
             padding: 20px;
@@ -29,10 +32,12 @@
             max-width: 100%;
             margin: 0;
         }
+        /* Styling of the items of the lists */
         ul li, ol li {
             margin: 10px 0;
             padding-left: 5px;
         }
+        /* Styling the image  */
         img {
             width: 100%;
             height: auto;
@@ -40,15 +45,18 @@
             margin-bottom: 20px;
             display: block;
         }
+        /* Styling the paragragh tag */
         p {
             text-align: center;
             font-size: 18px;
             font-weight: bold;
         }
+        /* Styling the navigation tab */
         nav {
             text-align: center;
             margin-bottom: 20px;
         }
+        /* Navigation link text styling */
         nav a {
             text-decoration: none;
             color: #7b3f00;
@@ -56,9 +64,11 @@
             margin: 0 15px;
             font-size: 18px;
         }
+        /* Navigation links with a hover effect */
         nav a:hover {
             text-decoration: underline;
         }
+        /* Styling the footer of the page */
         footer {
             background-color: #7b3f00;
             color: white;
@@ -67,15 +77,16 @@
             margin-top: 40px;
             border-radius: 10px;
         }
+       /* Styling the text of the footer paragraph */
         footer p {
             margin: 10px 0;
             font-size: 16px;
+            color: white;
         }
-        .social-icons a {
+        /* Anchor links styling  */
+        a{
             color: white;
             text-decoration: none;
-            margin: 0 10px;
-            font-size: 20px;
         }
     </style>
 </head>
@@ -86,8 +97,9 @@
     <hr>
  <!--Navigation to direct to the following sections-->    
     <nav>
-        <a href="#Ingredients">Ingredients</a>|<a href="#instructions">Instructions</a>
+        <a href="#Ingredients">Ingredients</a>|<a href="#instructions">Instructions</a>|<a href="#Pro-Tips">Pro Tips</a>
     </nav>
+    
  <!--Image of a Tiramisu-->
     <img src="tiramisu-cake-with-cocoa-coffee-black-background.jpg" alt="Tiramisu Image">
     
@@ -123,20 +135,21 @@
         <li>Garnish with dark chocolate shavings before serving (optional).</li>
     </ol>
  <!--Additional tips-->
-    <h2>🍴 Pro Tips:</h2>
-    <ul>
-        <li>For a richer flavor, let the tiramisu rest overnight.</li>
-        <li>Use fresh, high-quality mascarpone cheese.</li>
-    </ul>
+ <h2 id="Pro-Tips">🍴 Pro Tips:</h2>
+ <ul>
+     <li>For a richer flavor, let the tiramisu rest overnight.</li>
+     <li>Use fresh, high-quality mascarpone cheese.</li>
+ </ul>
+ 
  <!--Footer containing the socials-->
-    <footer>
-        <p>&copy; 2025 Blog by Ambreen. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
+ <footer>
+    <p>&copy; 2025 Blog by Ambreen. All rights reserved.</p>
+    <p>
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">Twitter</a>
+    </p>
+</footer>
 
 </body>
 </html>
