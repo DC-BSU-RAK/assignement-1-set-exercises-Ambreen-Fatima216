@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Title for the Recipe Page-->
     <title>Tiramisu Recipe</title>
-     <!--Internal CSS for the recipe page-->
     <style>
-        /* Styling the Body  */
+        /* Styling the Body */
         body {
             font-family: Arial, sans-serif;
             background-color: #c2a17d;
@@ -21,7 +19,7 @@
             color: #7b3f00;
             text-align: center;
         }
-        /* Styling for both ordered and unordered lists */
+        /* Styling for lists */
         ul, ol {
             background: rgba(255, 255, 255, 0.9);
             padding: 20px;
@@ -32,12 +30,12 @@
             max-width: 100%;
             margin: 0;
         }
-        /* Styling of the items of the lists */
+        /* Styling list items */
         ul li, ol li {
             margin: 10px 0;
             padding-left: 5px;
         }
-        /* Styling the image  */
+        /* Styling images */
         img {
             width: 100%;
             height: auto;
@@ -45,18 +43,17 @@
             margin-bottom: 20px;
             display: block;
         }
-        /* Styling the paragragh tag */
+        /* Paragraph styling */
         p {
             text-align: center;
             font-size: 18px;
             font-weight: bold;
         }
-        /* Styling the navigation tab */
+        /* Navigation styling */
         nav {
             text-align: center;
             margin-bottom: 20px;
         }
-        /* Navigation link text styling */
         nav a {
             text-decoration: none;
             color: #7b3f00;
@@ -64,11 +61,10 @@
             margin: 0 15px;
             font-size: 18px;
         }
-        /* Navigation links with a hover effect */
         nav a:hover {
             text-decoration: underline;
         }
-        /* Styling the footer of the page */
+        /* Footer styling */
         footer {
             background-color: #7b3f00;
             color: white;
@@ -77,50 +73,83 @@
             margin-top: 40px;
             border-radius: 10px;
         }
-       /* Styling the text of the footer paragraph */
         footer p {
             margin: 10px 0;
             font-size: 16px;
             color: white;
         }
-        /* Anchor links styling  */
-        a{
+        a {
             color: white;
             text-decoration: none;
         }
+        /* Styling the ingredients section */
+        .ingredients-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .ingredients-container ul {
+            flex: 1;
+            margin: 0;
+            padding-right: 20px;
+        }
+        .ingredients-image {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+        /* Styling the video container */
+        .video-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border-radius: 10px;
+        }
     </style>
 </head>
- <!--Body tag that contains information-->
 <body>
- <!--Heading for the Recipe Page-->
     <h1>Classic Ambreen's Tiramisu Recipe</h1>
     <hr>
- <!--Navigation to direct to the following sections-->    
     <nav>
-        <a href="#Ingredients">Ingredients</a>|<a href="#instructions">Instructions</a>|<a href="#Pro-Tips">Pro Tips</a>
+        <a href="#ingredients">Ingredients</a> | 
+        <a href="#instructions">Instructions</a> | 
+        <a href="#video">Video Tutorial</a> | 
+        <a href="#pro-tips">Pro Tips</a>
     </nav>
-    
- <!--Image of a Tiramisu-->
+
     <img src="tiramisu-cake-with-cocoa-coffee-black-background.jpg" alt="Tiramisu Image">
-    
+
     <p>A classic Italian dessert made with layers of coffee-soaked ladyfingers, rich mascarpone cream, and a dusting of cocoa powder. Perfect for any occasion!</p>
- <!--Ingredients List-->  
-    <h2 id="Ingredients">🤎Ingredients required:🤎</h2>
-    <ul>
-        <li>1 cup strong brewed coffee, cooled</li>
-        <li>3 tablespoons sugar</li>
-        <li>3 large eggs, separated</li>
-        <li>8 ounces mascarpone cheese</li>
-        <li>1 teaspoon vanilla extract</li>
-        <li>24 ladyfinger biscuits or replace with 48 Marie biscuits as a substitute.</li>
-        <li>2 tablespoons cocoa powder</li>
-        <li>1 tablespoon coffee liqueur (optional, for extra flavor)</li>
-        <li>Dark chocolate shavings for garnish (optional)</li>
-    </ul>
- <!--Ingredients list image-->
-    <img src="ClassicItalianTiramisu_Ingredient.jpg" alt="Ingredients Image">
- <!--Instructions for the recipe-->
-    <h2 id="instructions">🤎Instructions to be followed:🤎</h2>
+
+    <!-- Ingredients Section -->
+    <h2 id="ingredients">🤎 Ingredients required: 🤎</h2>
+    <div class="ingredients-container">
+        <ul>
+            <li>1 cup strong brewed coffee, cooled</li>
+            <li>3 tablespoons sugar</li>
+            <li>3 large eggs, separated</li>
+            <li>8 ounces mascarpone cheese</li>
+            <li>1 teaspoon vanilla extract</li>
+            <li>24 ladyfinger biscuits or replace with 48 Marie biscuits as a substitute.</li>
+            <li>2 tablespoons cocoa powder</li>
+            <li>1 tablespoon coffee liqueur (optional, for extra flavor)</li>
+            <li>Dark chocolate shavings for garnish (optional)</li>
+        </ul>
+        <img src="ClassicItalianTiramisu_Ingredient.jpg" alt="Ingredients Image" class="ingredients-image">
+    </div>
+
+    <h2 id="instructions">🤎 Instructions to be followed: 🤎</h2>
     <ol>
         <li>Whisk the egg yolks with sugar until pale and creamy.</li>
         <li>Add mascarpone cheese and vanilla extract, mixing until smooth.</li>
@@ -134,22 +163,26 @@
         <li>Chill in the refrigerator for at least 4 hours before serving.</li>
         <li>Garnish with dark chocolate shavings before serving (optional).</li>
     </ol>
- <!--Additional tips-->
- <h2 id="Pro-Tips">🍴 Pro Tips:</h2>
- <ul>
-     <li>For a richer flavor, let the tiramisu rest overnight.</li>
-     <li>Use fresh, high-quality mascarpone cheese.</li>
- </ul>
- 
- <!--Footer containing the socials-->
- <footer>
-    <p>&copy; 2025 Blog by Ambreen. All rights reserved.</p>
-    <p>
-        <a href="#">Facebook</a> | 
-        <a href="#">Instagram</a> | 
-        <a href="#">Twitter</a>
-    </p>
-</footer>
 
+    <!-- Video Tutorial Section -->
+    <h2 id="video">🎥 Watch the Tiramisu Video Tutorial:</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/87V4nizNJiE?si=3xBFP4nfHibXaGSw" title" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h2 id="pro-tips">🍴 Pro Tips:</h2>
+    <ul>
+        <li>For a richer flavor, let the tiramisu rest overnight.</li>
+        <li>Use fresh, high-quality mascarpone cheese.</li>
+    </ul>
+
+    <footer>
+        <p>&copy; 2025 Blog by Ambreen. All rights reserved.</p>
+        <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
 </body>
 </html>
