@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Petrol Calculator</title>
+  
   <style>
+/*Styling heading tag*/
+    h1{
+      color: rgb(4, 4, 33);
+    }
+/*Styling Body tag*/
     body {
       font-family: Arial, sans-serif;
       background-color: #aacbd1;
       text-align: center;
       padding-top: 40px;
     }
-
+/*Styling input button*/
     input, button {
       margin: 10px;
       padding: 10px;
@@ -30,11 +36,12 @@
     button:hover {
       background-color: rgb(5, 8, 41);
     }
-
+/*Styling output result*/
     #totalAmount {
       font-weight: bold;
       font-size: large;
       margin-top: 20px;
+      color: rgb(4, 4, 33);
     }
   </style>
 </head>
@@ -44,27 +51,26 @@
   <h1>Petrol Calculator</h1>
 
   <!-- Fixed petrol price -->
-  <p>Petrol price per litre: <strong>1.72</strong></p>
+  <p>Petrol price per litre: <strong>1.72 AED</strong></p>
 
   <!-- Input for liters -->
   <p>Enter number of litres:</p>
   <input id="liters" type="number" placeholder="0">
 
   <!-- Button to calculate -->
-  <br>
   <button onclick="calculate()">Calculate Total</button>
 
-  <!-- Result will appear here -->
-  <p id="totalAmount">Total Amount: £0.00</p>
+  <!-- Output will appear here -->
+  <p id="totalAmount">Total Amount: AED 0.00</p>
 
-  <!-- JavaScript to do the calculation -->
+  <!-- JavaScript to do the calculation funtion -->
   <script>
-    // This function runs when button is clicked
+    // This function is runned when the button is clicked
     function calculate() {
       const price = 1.72; // Fixed price per litre
-      const liters = parseFloat(document.getElementById("liters").value); // Get input value
-      const total = price * liters; // Calculate total
-      document.getElementById("totalAmount").innerText = "Total Amount: £" + total.toFixed(2); // Show result
+      const liters = parseFloat(document.getElementById("liters").value); // Getting the input value
+      const total = price * liters; // Calculates the total
+      document.getElementById("totalAmount").innerText = "Total Amount: AED" + total.toFixed(2); // Shows output
     }
   </script>
 
