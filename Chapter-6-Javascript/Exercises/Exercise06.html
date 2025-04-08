@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Petrol Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #aacbd1;
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    input, button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input:focus {
+      border: 2px solid rgb(59, 59, 134);
+    }
+
+    button {
+      background-color: rgb(19, 50, 87);
+      color: rgba(255, 255, 255, 0.938);
+      border: none;
+    }
+
+    button:hover {
+      background-color: rgb(5, 8, 41);
+    }
+
+    #totalAmount {
+      font-weight: bold;
+      font-size: large;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page title -->
+  <h1>Petrol Calculator</h1>
+
+  <!-- Fixed petrol price -->
+  <p>Petrol price per litre: <strong>1.72</strong></p>
+
+  <!-- Input for liters -->
+  <p>Enter number of litres:</p>
+  <input id="liters" type="number" placeholder="0">
+
+  <!-- Button to calculate -->
+  <br>
+  <button onclick="calculate()">Calculate Total</button>
+
+  <!-- Result will appear here -->
+  <p id="totalAmount">Total Amount: £0.00</p>
+
+  <!-- JavaScript to do the calculation -->
+  <script>
+    // This function runs when button is clicked
+    function calculate() {
+      const price = 1.72; // Fixed price per litre
+      const liters = parseFloat(document.getElementById("liters").value); // Get input value
+      const total = price * liters; // Calculate total
+      document.getElementById("totalAmount").innerText = "Total Amount: £" + total.toFixed(2); // Show result
+    }
+  </script>
+
+</body>
+</html>
