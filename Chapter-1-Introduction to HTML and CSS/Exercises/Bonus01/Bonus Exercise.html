@@ -4,146 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS Beginner's Guide</title>
-    <style>
-        /* Global reset - just making everything normal */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        /* Body Styling - This is like the background of your webpage */
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f6f8; /* Soft background to not hurt your eyes */
-            color: #333; /* Dark text so it's easy to read */
-            padding-top: 50px; /* Gives some space at the top */
-        }
-        
-        /* Header section, it's like your webpage's title */
-        header {
-            background-color: #4CAF50; /* Fresh green color */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            letter-spacing: 1px;
-        }
-        
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-        
-        /* Main content area, this is where the fun stuff goes */
-        main {
-            padding: 20px 10%;
-            margin: 20px auto;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A little shadow to make things pop */
-            border-radius: 10px;
-        }
-        
-        /* Styling for HTML and CSS reference sections */
-        .html-reference, .css-reference {
-            margin-top: 30px;
-        }
-        
-        h2 {
-            font-size: 2em;
-            color: #444;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
-        }
-        
-        .html-tag, .css-property {
-            background-color: #fafafa;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            transition: transform 0.3s ease-in-out;
-        }
-        
-        .html-tag:hover, .css-property:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Section headers inside tags */
-        h3 {
-            font-size: 1.5em;
-            color: #333;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        
-        /* Styling for the code blocks */
-        pre, code {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 4px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 1.1em;
-            overflow-x: auto;
-        }
-        
-        /* Footer Styling - Just a simple footer */
-        footer {
-            background-color: #4CAF50; /* Same green color */
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 50px;
-            font-size: 0.9em;
-        }
-    </style>
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="BonusStyle1.css">
 </head>
 <body>
+     <!-- Top of the page -->
     <header>
         <h1>HTML & CSS Beginner's Guide</h1>
         <p>Let's Dive Into HTML & CSS!</p>
     </header>
-    
+     <!-- Section showing examples of HTML tags -->
     <main>
         <section class="html-reference">
             <h2>HTML Tags (What Are These?)</h2>
-
+            <!-- Heading tags from h1 to h6 -->
             <div class="html-tag">
                 <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
                 <p>These are your heading tags. They define titles or sections. <strong>&lt;h1&gt;</strong> is the biggest one, and <strong>&lt;h6&gt;</strong> is the smallest.</p>
                 <pre><code>&lt;h1&gt;Biggest Heading!&lt;/h1&gt;</code></pre>
             </div>
-
+            <!-- Paragraph tag -->
             <div class="html-tag">
                 <h3>&lt;p&gt;</h3>
                 <p>It's for paragraphs of text. Very useful!</p>
                 <pre><code>&lt;p&gt;This is a paragraph of text!&lt;/p&gt;</code></pre>
             </div>
-
+            <!--Anchor Tag-->
             <div class="html-tag">
                 <h3>&lt;a&gt;</h3>
                 <p>This is for links. You can link to other pages or websites.</p>
                 <pre><code>&lt;a href="https://google.com"&gt;Click here to go to Google&lt;/a&gt;</code></pre>
             </div>
-
+            <!--Div Container Tag -->
             <div class="html-tag">
                 <h3>&lt;div&gt;</h3>
                 <p>The &lt;div&gt; tag is a container. It doesn’t do much by itself, but you can use it to group things together.</p>
                 <pre><code>&lt;div&gt;This is inside a div&lt;/div&gt;</code></pre>
             </div>
-
+            <!--Image Tag-->
             <div class="html-tag">
                 <h3>&lt;img&gt;</h3>
                 <p>Want to add an image? Use the &lt;img&gt; tag! Just make sure to add a description too, with alt.</p>
                 <pre><code>&lt;img src="image.jpg" alt="An awesome image"&gt;</code></pre>
             </div>
-
+            <!--unordered list tag-->
             <div class="html-tag">
                 <h3>&lt;ul&gt; &lt;ol&gt;</h3>
                 <p>&lt;ul&gt; makes unordered lists, and &lt;ol&gt; makes ordered (numbered) lists. They both use &lt;li&gt; for list items.</p>
@@ -152,17 +56,20 @@
     &lt;li&gt;Item 2&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
-
+            <!--Audio Tag -->
             <div class="html-tag">
-                <h3>&lt;span&gt;</h3>
-                <p>&lt;span&gt; is like a little helper. It’s used to style a small part of text.</p>
-                <pre><code>&lt;span&gt;Just this part is styled!&lt;/span&gt;</code></pre>
+                <h3>&lt;audio&gt;</h3>
+                <p>Use this tag to add sound to your webpage. You can play music, voice notes, or any audio file.</p>
+                <pre><code>&lt;audio controls&gt;
+                &lt;source src="song.mp3" type="audio/mpeg"&gt;
+                Your browser does not support the audio element.
+            &lt;/audio&gt;</code></pre>
             </div>
-        </section>
-
+            
+        <!-- Section for explaining CSS properties -->
         <section class="css-reference">
-            <h2>CSS Properties (Make It Pretty!)</h2>
-
+            <h2>CSS Properties (Designing the HTML)</h2>
+             <!-- Fonts that can be changes -->
             <div class="css-property">
                 <h3>font-family</h3>
                 <p>This defines the font of the text. Use it to make things look good!</p>
@@ -170,7 +77,7 @@
     font-family: 'Arial', sans-serif;
 }</code></pre>
             </div>
-
+             <!-- styling the text color -->
             <div class="css-property">
                 <h3>color</h3>
                 <p>Change the text color with this. Choose something that fits your style!</p>
@@ -178,7 +85,7 @@
     color: #333;
 }</code></pre>
             </div>
-
+             <!-- changing the background color -->
             <div class="css-property">
                 <h3>background-color</h3>
                 <p>Change the background color of an element.</p>
@@ -186,7 +93,7 @@
     background-color: #f9f9f9;
 }</code></pre>
             </div>
-
+             <!-- Adding padding  -->
             <div class="css-property">
                 <h3>padding</h3>
                 <p>Padding is the space inside the element. So, it’s like the cushion around the content.</p>
@@ -194,7 +101,7 @@
     padding: 20px;
 }</code></pre>
             </div>
-
+             <!-- maintaining margins -->
             <div class="css-property">
                 <h3>margin</h3>
                 <p>This is the space outside the element. It's like giving it room to breathe.</p>
@@ -202,7 +109,7 @@
     margin: 15px;
 }</code></pre>
             </div>
-
+             <!-- border around a element -->
             <div class="css-property">
                 <h3>border</h3>
                 <p>Add a border around an element. You can choose the color and thickness!</p>
@@ -210,7 +117,7 @@
     border: 2px solid #333;
 }</code></pre>
             </div>
-
+             <!-- Display such as flex -->
             <div class="css-property">
                 <h3>display</h3>
                 <p>This controls how the element is displayed. Block or inline are the most common.</p>
@@ -218,7 +125,7 @@
     display: flex;
 }</code></pre>
             </div>
-
+             <!-- Text alignment -->
             <div class="css-property">
                 <h3>text-align</h3>
                 <p>Align your text left, right, or center.</p>
@@ -226,7 +133,7 @@
     text-align: center;
 }</code></pre>
             </div>
-
+             <!-- text size -->
             <div class="css-property">
                 <h3>font-size</h3>
                 <p>Change the size of the font! Bigger text for big ideas.</p>

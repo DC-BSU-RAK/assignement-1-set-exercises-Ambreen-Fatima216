@@ -1,0 +1,102 @@
+/* Resetting default spacing and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Helps keep things from stretching out */
+}
+
+/* Styling the main body of the page */
+body {
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+    line-height: 1.6; /* Makes text easier to read */
+    background-color: #f4f6f8; /* Light background */
+    color: #333; /* Dark grey text for contrast */
+    padding-top: 50px; /* Bit of space from the top */
+}
+
+/* Styling the header area */
+header {
+    background-color: #624894; /* Purple background */
+    color: white; /* White text */
+    text-align: center; /* Centers all the text inside */
+    padding: 20px 0; /* Adds space above and below header */
+}
+
+/* Styling the main h1 title */
+h1 {
+    font-size: 2.5em; /* Makes the title big */
+    letter-spacing: 1px; /* Adds space between letters */
+}
+
+/* Subheading in the header */
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 300; /* Lighter text */
+}
+
+/* Styling the main content box */
+main {
+    padding: 20px 10%; /* Adds space inside the box */
+    margin: 20px auto; /* Centers the main section */
+    background-color: white; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Adds spacing above each reference section */
+.html-reference, .css-reference {
+    margin-top: 30px;
+}
+
+/* Section headers like "HTML Tags" and "CSS Properties" */
+h2 {
+    font-size: 2em; /* Makes section titles big */
+    color: #3e093d; /* Dark purple */
+    border-bottom: 2px solid #2e0b38; /* Line under the heading */
+    padding-bottom: 10px;
+}
+
+/* Styling each HTML or CSS info box */
+.html-tag, .css-property {
+    background-color: #8e80a5; /* Soft purple */
+    border: 1px solid #232c4f; /* Dark border */
+    padding: 15px;
+    margin-bottom: 20px; /* Space between boxes */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect when mouse moves over a tag box */
+.html-tag:hover, .css-property:hover {
+    transform: translateX(5px); /* Slides the box a bit to the right */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bit more shadow on hover */
+}
+
+/* Styling the mini headings inside boxes (like h3s) */
+h3 {
+    font-size: 1.5em;
+    color: #fdfdfd; /* White text */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Styling code examples */
+pre, code {
+    background-color: #f4f4f4; /* Light grey bg */
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    overflow-x: auto; /* So long code doesn’t break the page */
+}
+
+/* Footer styles */
+footer {
+    background-color: #624894; /* Same purple as header */
+    
+}
+
+footer p {
+    color: #fdfdfd;
+    text-align: center;/*Aligning the text onth footer*/
+}
