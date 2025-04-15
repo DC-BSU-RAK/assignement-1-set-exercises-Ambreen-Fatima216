@@ -1,0 +1,83 @@
+  /* Style for the whole page */
+  body {
+    background-color: #c375755a; 
+    color: rgb(52, 70, 74); 
+    text-align: center;
+    padding: 10pt;
+  }
+  /* Header section with background color */
+  header {
+    background-color: #e38a8ab3; 
+    padding: 10pt;
+    color: white;
+    border-color: #c375755a; 
+  }
+  /* Header text style */
+  header h1 {
+    font-size: 25pt; 
+    line-height: 1.6; 
+  }
+  /* Style for the RGB value inside header */
+  #rgbValue {
+    font-size: 25pt;
+    font-weight: bold;
+  }
+  /* Controls container: new colors, lives, score */
+  .controls {
+    margin: 20pt 0; 
+    display: flex;
+    justify-content: center; 
+    gap: 30pt; 
+    font-size: 15pt;
+    align-items: center; 
+  }
+  
+  /* Style for all buttons */
+  button {
+    background-color: rgb(128, 89, 89); 
+    color: black;
+    border: none;
+    padding: 10pt 15pt;
+    font-size: 12pt;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6pt;
+    transition: background-color 0.3s;
+  }
+  /* Button hover effect */
+  button:hover {
+    background-color: #ddd; /* Light gray on hover */
+  }
+  /* Grid container for color options */
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* 3 boxes per row */
+    justify-content: center; 
+    gap: 18pt; 
+    margin: 30pt auto; 
+  }
+  
+  /* Style for each color square */
+  .color-square {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px; /* Makes them circular */
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+  }
+  
+  /* Zoom effect on hover */
+  .color-square:hover {
+    transform: scale(1.05); 
+  }
+  
+  /* Message text displas such as game over */
+  #message {
+    font-size: 14pt;
+    margin: 15pt 0;
+    height: 30px; 
+  }
+  .hidden {
+    display: none;
+  }
+  
