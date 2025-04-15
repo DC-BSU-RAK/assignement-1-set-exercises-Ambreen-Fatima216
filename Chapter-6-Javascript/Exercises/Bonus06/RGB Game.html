@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RGB Color Game</title>
+  <link rel="stylesheet" href="RGB Game.css" />
+</head>
+<body>
+    <!--Top Header Section-->
+  <header>
+    <h1>Guess the following <br><span id="rgbValue">RGB!! (??, ??, ??)</span><br>Color Value Guessing Game</h1>
+  </header>
+<!--Creating the game contols such as lives, score and new colors-->
+  <div class="controls">
+    <!--Button for new colors to be generated-->
+    <button id="newColorsBtn">New Colors</button>
+<!--Lives and score count-->
+    <span>Lives: <span id="livesCount">3</span></span>
+    <span>Score: <span id="scoreCount">0</span></span>
+  </div>
+<!--color options grid-->
+  <div class="color-grid" id="colorGrid"></div>
+<!--Play agaaijn to restart the game-->
+  <div id="message"></div>
+  <button id="replayBtn" class="hidden">Play Again</button>
+<!--Linking the javascript to make it interactive-->
+  <script src="RGB Game.js"></script>
+</body>
+</html>
