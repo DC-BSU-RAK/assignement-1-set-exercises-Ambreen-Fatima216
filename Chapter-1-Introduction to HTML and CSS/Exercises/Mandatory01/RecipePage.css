@@ -1,0 +1,111 @@
+/* Styling the Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c2a17d;
+            color: #333;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+        }
+/* Headings Styling */
+        h1, h2 {
+            color: #7b3f00;
+            text-align: center;
+        }
+/* Styling for lists */
+        ul, ol {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            line-height: 1.6;
+            list-style-position: inside;
+            max-width: 100%;
+            margin: 0;
+        }
+/* Styling list items */
+        ul li, ol li {
+            margin: 10px 0;
+            padding-left: 5px;
+        }
+/* Styling images */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: block;
+        }
+/* Paragraph styling */
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+/* Navigation styling */
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #7b3f00;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+/* Footer styling */
+        footer {
+            background-color: #7b3f00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        footer p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: white;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+/* Styling the ingredients section */
+        .ingredients-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .ingredients-container ul {
+            flex: 1;
+            margin: 0;
+            padding-right: 20px;
+        }
+        .ingredients-image {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+/* Styling the video container */
+        .video-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border-radius: 10px;
+        }

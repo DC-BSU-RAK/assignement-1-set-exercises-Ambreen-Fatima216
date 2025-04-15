@@ -3,74 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Petrol Calculator</title>
+  <link rel="stylesheet" href="PetrolCalculator.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Petrol Calculator</title>
   
-  <style>
-/*Styling heading tag*/
-    h1{
-      color: rgb(4, 4, 33);
-    }
-/*Styling Body tag*/
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #aacbd1;
-      text-align: center;
-      padding-top: 40px;
-    }
-/*Styling input button*/
-    input, button {
-      margin: 10px;
-      padding: 10px;
-      font-size: 16px;
-    }
-
-    input:focus {
-      border: 2px solid rgb(59, 59, 134);
-    }
-
-    button {
-      background-color: rgb(19, 50, 87);
-      color: rgba(255, 255, 255, 0.938);
-      border: none;
-    }
-
-    button:hover {
-      background-color: rgb(5, 8, 41);
-    }
-/*Styling output result*/
-    #totalAmount {
-      font-weight: bold;
-      font-size: large;
-      margin-top: 20px;
-      color: rgb(4, 4, 33);
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Page title -->
-  <h1>Petrol Calculator</h1>
+  <div class="container">
+    <h1><pre>
+      ---------------------  
+    ⛽Petrol Calculator🏪
+    ---------------------</pre></h1>
 
-  <!-- Fixed petrol price -->
-  <p>Petrol price per litre: <strong>1.72 AED</strong></p>
+    <p>Petrol price per litre: <strong>1.72 AED</strong></p>
 
-  <!-- Input for liters -->
-  <p>Enter number of litres:</p>
-  <input id="liters" type="number" placeholder="0">
+    <p>Enter number of litres:</p>
+    <input id="liters" type="number" placeholder="0">
 
-  <!-- Button to calculate -->
-  <button onclick="calculate()">Calculate Total</button>
+    <button onclick="calculatetotal()">Calculate Total</button>
 
-  <!-- Output will appear here -->
-  <p id="totalAmount">Total Amount: AED 0.00</p>
+    <p id="totalPrice">Total Amount: AED 0.00</p>
+  </div>
 
-  <!-- JavaScript to do the calculation funtion -->
   <script>
-    // This function is runned when the button is clicked
-    function calculate() {
-      const price = 1.72; // Fixed price per litre
-      const liters = parseFloat(document.getElementById("liters").value); // Getting the input value
-      const total = price * liters; // Calculates the total
-      document.getElementById("totalAmount").innerText = "Total Amount: AED" + total.toFixed(2); // Shows output
+    function calculatetotal() {
+      const price = 1.72;
+      const liters = parseFloat(document.getElementById("liters").value);
+      const total = price * liters;
+      document.getElementById("totalPrice").innerText = "Total Amount: AED " + total.toFixed(2);
     }
   </script>
 

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Georgia;
+    color: rgb(255, 255, 255);
+    
+    text-align: center;
+    background: url('https://witcherhour.com/wp-content/uploads/2021/09/witcher-lore-explained-1024x733.jpg') center/cover no-repeat;
+
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .video-wrapper {
+    text-align: center;
+  }
+  
+  video {
+    max-width: 90vw;
+    max-height: 60vh;
+    border: 3px solid black;
+    align-content: center;
+  }
+  
+  .caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
