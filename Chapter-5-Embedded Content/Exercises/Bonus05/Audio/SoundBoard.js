@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const samples = document.querySelectorAll('.sample');
+    const samples = document.querySelectorAll('.Audios');
 
     samples.forEach(sample => {
       sample.addEventListener('click', function () {
