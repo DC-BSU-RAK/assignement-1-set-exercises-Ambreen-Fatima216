@@ -1,0 +1,181 @@
+/* BASIC BODY'S STYLING */
+body {
+  font-family: 'Changa', sans-serif;
+  background-image: url('https://i.pinimg.com/736x/fd/0d/b9/fd0db965be2ade290ef2510f5c60ca17.jpg'); /* Background from Pinterest */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #e0dede;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Keeps paragraphs aligned left even if the rest is centered */
+p {
+  text-align: left;
+}
+
+/* HEADER STYLES */
+h1 {
+  font-family: 'Creepster', cursive; /* That horror-movie look */
+  background-color: #5a0000;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px black;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Creepster', cursive;
+  color: #ff4b4b;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ff4b4b; /* Pop of red on hover */
+}
+
+/* MAIN CONTENT SECTIONS */
+section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 12px;
+}
+
+/* For dramatic, standout quotes or thoughts */
+.highlight {
+  font-style: italic;
+  color: #ffcccb;
+}
+
+/* LISTS */
+ul {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #8b0000;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #a30000;
+}
+
+/* QUOTE BLOCK */
+.quote {
+  font-style: italic;
+  color: #c4c4c4;
+  border-left: 4px solid #555;
+  padding-left: 16px;
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+/*  CHARACTER PAGE STYLES */
+.characters-section {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Each character card */
+.character-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect to give it a bit of life */
+.character-card:hover {
+  transform: scale(1.02);
+  background-color: #3a3a3a;
+}
+
+/* Character image box */
+.character-img {
+  flex: 0 0 150px;
+  height: 200px;
+  background-color: #555;
+  border-radius: 10px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Character text details */
+.character-info {
+  flex: 1;
+}
+
+.character-info h3 {
+  margin-top: 0;
+  color: #ac0b0b;
+  font-family: 'Changa', sans-serif;
+}
+
+.character-info p {
+  margin: 10px 0;
+  line-height: 25px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #5a0000;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px;
+}
