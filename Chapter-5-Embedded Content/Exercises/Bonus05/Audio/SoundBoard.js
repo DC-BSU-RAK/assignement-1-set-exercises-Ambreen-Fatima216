@@ -1,17 +1,26 @@
+// Wait for the entire page (DOM) to be fully loaded before running the script
 document.addEventListener("DOMContentLoaded", function () {
-    const samples = document.querySelectorAll('.Audios');
-
-    samples.forEach(sample => {
-      sample.addEventListener('click', function () {
-        const audioFile = this.getAttribute('data-audio');
-        if (audioFile) {
-          const audio = new Audio(audioFile);
-          audio.play().catch(error => {
-            console.error("Audio playback failed:", error);
-          });
-        } else {
-          console.warn("No audio file specified in data-audio attribute.");
-        }
-      });
+  // Select all elements with the class Audios
+  const Audios = document.querySelectorAll('.Audios');
+  // Loop through each audio element
+  Audios.forEach(sample => {
+    // Add a click to each audio element
+    Audios.addEventListener('click', function () {
+      // Get the value of the 'data-audio' attribute (the path to the audio file)
+      const audioFile = this.getAttribute('data-audio');
+      // If an audio file is specified
+      if (audioFile) {
+        // Create a new Audio object with the file path
+        const audio = new Audio(audioFile);
+        // Attempt to play the audio
+        audio.play().catch(error => {
+          // If playback fails
+          console.error("Audio playback failed:", error);
+        });
+      } else {
+        //if no audio file was found
+        console.warn("No audio file specified in data-audio attribute.");
+      }
     });
   });
+});
