@@ -2,11 +2,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Select all elements with the class Audios
   const Audios = document.querySelectorAll('.Audios');
+
   // Loop through each audio element
   Audios.forEach(sample => {
     // Add a click to each audio element
-    Audios.addEventListener('click', function () {
-      // Get the value of the 'data-audio' attribute (the path to the audio file)
+    sample.addEventListener('click', function () {
+      // Get the value of the data-audio attribute 
       const audioFile = this.getAttribute('data-audio');
       // If an audio file is specified
       if (audioFile) {
@@ -24,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
