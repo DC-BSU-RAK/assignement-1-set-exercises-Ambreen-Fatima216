@@ -1,54 +1,89 @@
-/*Styling the body*/
+/* Basic page setup */
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #221134;
-    color: #333;
+    font-family: 'Courier New', Courier, monospace; /* Retro typewriter vibe */
+    background-color: #221134; /* Dark purple background for contrast */
+    color: #f0f0f0; /* Light text for readability */
     margin: 0;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
-}
-/*Styling the H1 tag*/
-h1 {
-    font-size: 3rem;
-    color: #ff6f61;
-    margin-bottom: 40px;
-    text-shadow: 2px 2px #ffd54f;
-    background-color: #ffe761;
-}
-/*Adjusting the image holder*/
-.image-container {
+  }
+  
+  /* Main heading */
+  h1 {
+    font-size: 48px;
+    color: #ff6f61; /* Soft retro red */
+    margin-bottom: 50px;
+    text-shadow: 2px 2px #ffd54f; /* Slight yellow glow */
+    background-color: #ffe761; /* Light yellow background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Container for all the images */
+  .image-container {
     display: flex;
-    flex-direction: column;/* Flex to help scroll the images in a column*/
+    flex-direction: column; /* Stack images vertically */
     align-items: center;
-    gap: 50px;
+    gap: 50px; /* Space between each image block */
     max-width: 1000px;
     margin: 0 auto;
-}
-
-figure {
+  }
+  
+  /* Each image block */
+  figure {
     margin: 0;
     padding: 20px;
-    background-color: #00193f;
+    background-color: #00193f; /* Deep blue background */
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    max-width: 90%;
-    transition: transform 0.3s;
-}
-
-/*Captions for the images*/
-figcaption {
-    font-size: 0.95rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Drop shadow for depth */
+    width: 100%;
+    max-width: 850px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Zoom in slightly on hover */
+  figure:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Image caption */
+  figcaption {
+    font-size: 16px;
     color: #ffffff;
-    margin-top: 10px;
-}
-
-figcaption a {
+    margin-top: 15px;
+    line-height: 1.5;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Caption link styles */
+  figcaption a {
     color: #f6f89e;
     text-decoration: none;
     font-weight: bold;
-}
-
-figcaption a:hover {
+  }
+  
+  figcaption a:hover {
     text-decoration: underline;
-}
-
+  }
+  
+  /* Keeps image inside rounded corners */
+  .img-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  /* Filter gives the image a retro look */
+  .filtered {
+    width: 100%;
+    display: block;
+    filter: sepia(60%) brightness(85%) contrast(105%);
+    transition: filter 0.4s ease;
+  }
+  
+  /* Hover reveals the original image colors */
+  figure:hover .filtered {
+    filter: none;
+  }
+  
