@@ -10,15 +10,13 @@ body {
   padding: 40px;
   text-align: center;
 }
-
 /* Keeps paragraphs aligned left even if the rest is centered */
 p {
   text-align: left;
 }
-
 /* HEADER STYLES */
 h1 {
-  font-family: 'Creepster', cursive; /* That horror-movie look */
+  font-family: 'Creepster', cursive; 
   background-color: #5a0000;
   color: white;
   text-align: center;
