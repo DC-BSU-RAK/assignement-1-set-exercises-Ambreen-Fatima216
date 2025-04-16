@@ -1,0 +1,99 @@
+  
+    /*Styling the body tag*/
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: url('background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+     /*Styling the container */
+      .container {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.758);
+        border-radius: 20px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      }
+       /*Styling the text to speech */
+      .text-to-speech-container {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Arial, sans-serif;
+      }
+
+      .text-to-speech-container input {
+        padding: 10px;
+        width: 70%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      
+      .text-to-speech-container button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #333;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .text-to-speech-container button:hover {
+        background-color: #555;
+      }
+      
+      .text-to-speech-container small {
+        display: block;
+        margin-top: 10px;
+        color: #333;
+      }
+           /*Styling the H1 tag*/
+      h1 {
+        color: #660e53;
+        font-size: 2em;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+      }
+       /*Styling the sound board so it displays 2*4*/
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+       /*Styling soundboard buttons tag*/
+      button {
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(45deg, #ff6ec4, #7873f5);
+        color: white;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+  
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+  
+      @media (max-width: 600px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
